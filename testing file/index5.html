@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="sign-up-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required> 
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      
+        <input type="submit" value="Sign Up">
+      </form>
+      <style>
+        .sign-up-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.sign-up-form label {
+  display: block;
+  margin-bottom: 10px;
+ 
+}
+
+.sign-up-form input[type="text"],
+.sign-up-form input[type="email"],
+.sign-up-form input[type="password"] {
+  width: 100%;
+  padding: 0px 0px 15px ;
+  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.sign-up-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sign-up-form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 600px) {
+  .sign-up-form {
+    max-width: 65%;
+    
+  }
+}
+      </style>
+</body>
+</html>
